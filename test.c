@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
     {
         printf("\nEnter a 6 digit number:\n");
         // Get user input with restriction of 4096
-        char *user_input = malloc(INPUT_SIZE_BUFFER);
+        char *user_input = malloc(INPUT_SIZE_BUFFER * sizeof(char));
 
         fgets(user_input, INPUT_SIZE_BUFFER, stdin);
 
@@ -38,7 +38,7 @@ int isalpha(int __c); printf("number cannot include letters")
 bool is_six_digits(char *user_input, int *integer)
 {
     int counter = 0;
-    char *input_buffer = malloc(INPUT_SIZE_BUFFER);
+    char *input_buffer = malloc(INPUT_SIZE_BUFFER * sizeof(char));
     int length = strlen(user_input);
 
     while (counter < length - 1)
