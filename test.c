@@ -18,7 +18,12 @@ int main(int argc, char *argv[])
 
     printf("You are about to play tic-tack-toe.");
     commands();
-
+    
+    // I think tis got added so commenting it out
+     //   printf("\nEnter a 6 digit number:\n");
+        // Get user input with restriction of 4096
+      //  char *user_input = malloc(INPUT_SIZE_BUFFER * sizeof(char)); There was ab error here commiting
+    
     // player one prompt
     printf("Player 1, it's your turn! Enter a command:\n");
 
@@ -39,6 +44,9 @@ bool parse_command(char *user_input)
 {
     char columns[] = "TMB";
     char rows[] = "LMR";
+    //int counter = 0;
+   // char *input_buffer = malloc(INPUT_SIZE_BUFFER * sizeof(char));
+   // int length = strlen(user_input);
 
     if (strchr(columns, *user_input) == NULL)
     {
