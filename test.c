@@ -10,7 +10,7 @@
 
 void commands();
 bool parse_command(char *user_input);
-int enter_value(char *user_input, int player, char game[][]);
+int enter_value(char *user_input, int player, char game[][3]);
 
 int main(int argc, char *argv[])
 {
@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 
     if (parse_command(user_input))
     {
-        enter_value(user_input, 1, rows);
+        enter_value(user_input, 1, rows[3][3]);
     }
 
     // player two prompt
