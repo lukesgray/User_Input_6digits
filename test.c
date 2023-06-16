@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 
     if (parse_command(user_input))
     {
-        enter_value(user_input, 1, rows[][]);
+        enter_value(user_input, 1, rows);
     }
 
     // player two prompt
